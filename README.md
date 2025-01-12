@@ -36,8 +36,8 @@ Make sure the following tools are installed on your system:
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/simple-calculator-gtest.git
-cd simple-calculator-gtest
+git clone https://github.com/JoaoBMC/SimpleCalculator.git
+cd SimpleCalculator
 ```
 
 ### 2️⃣ Configure the Build
