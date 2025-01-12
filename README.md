@@ -1,91 +1,138 @@
-Simple Calculator with Unit Testing (C++ + Google Test)
-This project is a simple calculator designed to practice unit testing with Google Test (gtest) in C++. It uses CMake and Ninja to simplify the build process and ensure cross-platform compatibility.
+Claro! Aqui está o README estruturado no estilo típico para repositórios no GitHub, com títulos, subtítulos e formatação Markdown clara:
 
-Features
-Basic arithmetic operations: addition, subtraction, multiplication, and division.
-Automated unit tests with Google Test.
-Automated download and integration of Google Test if not present.
-Automatic file detection for src/, test/, and main.cpp.
-Configured to work with C++17 and generate warnings for better code quality.
-Prerequisites
-To build and run the project, ensure you have the following tools installed:
+---
 
-CMake (minimum version 3.10)
-Ninja (build system generator)
-A C++17-compatible compiler:
-GCC (Linux)
-Clang (Linux/macOS)
-MSVC (Windows)
-Getting Started
-Clone the Repository
-bash
-Copiar código
+# 📚 Simple Calculator with Unit Testing (C++ + Google Test)
+
+A simple calculator application designed for practicing unit testing using **Google Test (gtest)** in C++. This project uses **CMake** and **Ninja** for cross-platform compatibility and ease of building.
+
+---
+
+## ✨ Features
+
+- 🧮 **Arithmetic operations**: Addition, subtraction, multiplication, and division.
+- ✅ **Unit tests**: Implemented with Google Test.
+- 🔧 **CMake integration**: Easy configuration and build process.
+- ⚙️ **Automatic file detection**: Automatically includes files from `src/` and `test/`.
+- 🚀 **Google Test auto-download**: Automatically clones and integrates Google Test if not present.
+- 🌍 **Cross-platform support**: Works on Linux, macOS, and Windows.
+
+---
+
+## 🛠️ Prerequisites
+
+Make sure the following tools are installed on your system:
+
+- **CMake** (minimum version 3.10)
+- **Ninja** build system
+- **C++17-compatible compiler**:
+  - GCC (Linux)
+  - Clang (Linux/macOS)
+  - MSVC (Windows)
+- **Git** (for cloning the repository and dependencies)
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/yourusername/simple-calculator-gtest.git
 cd simple-calculator-gtest
-Build the Project
-Create a build directory and navigate to it:
+```
 
-bash
-Copiar código
+### 2️⃣ Configure the Build
+Create a `build` directory and configure the project using CMake with Ninja:
+```bash
 mkdir build && cd build
-Configure the project with CMake and specify the Ninja generator:
-
-bash
-Copiar código
 cmake -G Ninja ..
-Build the project:
+```
 
-bash
-Copiar código
+### 3️⃣ Build the Project
+Run the build process:
+```bash
 cmake --build .
-Run the Tests
-After building, execute the unit tests:
+```
 
-bash
-Copiar código
+### 4️⃣ Run the Tests
+Execute the tests with:
+```bash
 ctest
-Alternatively, you can run specific test executables, such as:
+```
 
-bash
-Copiar código
-./build/Calculator_tests
-Project Structure
-plaintext
-Copiar código
+Or run the test executable directly:
+```bash
+./Calculator_tests
+```
+
+---
+
+## 📂 Project Structure
+
+```plaintext
 simple-calculator-gtest/
-├── CMakeLists.txt         # Main CMake configuration
-├── src/
+├── CMakeLists.txt         # Main CMake configuration file
+├── src/                   # Source code
 │   ├── calculator.cpp     # Calculator implementation
-│   └── main.cpp           # Entry point for the application
-├── inc/
-│   └── calculator.h       # Calculator header file
-├── test/
-│   └── calculator_test.cpp # Unit tests for the calculator
-├── googletest/            # (Optional) Google Test source (downloaded automatically if not found)
+│   └── main.cpp           # Main entry point
+├── inc/                   # Header files
+│   └── calculator.h       # Calculator header
+├── test/                  # Unit tests
+│   └── calculator_test.cpp # Google Test cases for calculator
+├── googletest/            # (Optional) Google Test sources (auto-downloaded if missing)
 ├── build/                 # Build output directory (created during configuration)
-└── README.md              # Documentation
-Notes on Configuration
-The CMakeLists.txt file is designed to handle different situations automatically:
+└── README.md              # Project documentation
+```
 
-Google Test Download:
+---
 
-If the googletest/ directory is missing, the project will automatically clone it from the official GitHub repository.
-Automatic File Detection:
+## 🔧 Configurations
 
-All .cpp files in src/ are treated as library or main files.
-Files in test/ are considered test files.
-Warnings Enabled:
+The `CMakeLists.txt` file automates much of the setup:
 
-The -Wall -Wextra flags are added for better code quality.
-Extending the Project
-You can enhance the project by:
+1. **Google Test Integration**:
+   - If `googletest/` is not present, it will be automatically cloned from the official GitHub repository.
 
-Adding more mathematical operations (e.g., exponentiation, logarithms).
-Improving error handling.
-Adding performance benchmarks.
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+2. **Source and Test File Management**:
+   - Files in `src/` are treated as either library or main application code.
+   - Files in `test/` are automatically included as unit tests.
 
-Contributing
-Feel free to submit issues or pull requests for improvements or bug fixes!
+3. **Compiler Warnings**:
+   - The project enables strict warnings (`-Wall -Wextra`) for high-quality code.
 
+---
+
+## 🏗️ Extending the Project
+
+Feel free to expand the calculator's functionality:
+1. Add advanced operations (e.g., trigonometric functions, logarithms).
+2. Enhance error handling for invalid inputs.
+3. Include additional unit tests for edge cases.
+
+---
+
+## 📝 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! To contribute:
+1. Fork this repository.
+2. Create a feature branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m "Add feature"`).
+4. Push the branch (`git push origin feature-name`).
+5. Open a pull request.
+
+---
+
+## 🙏 Acknowledgments
+
+- [Google Test (gtest)](https://github.com/google/googletest) for the testing framework.
+- The open-source community for making this project possible.
+
+---
+
+Com esta estrutura, o README está organizado, profissional e pronto para ser publicado em um repositório do GitHub. 🎉
