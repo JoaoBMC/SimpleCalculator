@@ -61,14 +61,14 @@ ctest
 
 Or run the test executable directly:
 ```bash
-./Calculator_tests
+./SimpleCalculator_tests
 ```
 
 ---
 ### 🧮 Running the Calculator
 To run the calculator, execute the main application:
 ```bash
-./Calculator_main
+./SimpleCalculator_main
 ```
 After running, the calculator will display a menu or interface (depending on your implementation). Enter your desired operations, such as addition or subtraction, as prompted.
 
