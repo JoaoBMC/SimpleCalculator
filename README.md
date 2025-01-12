@@ -1,4 +1,3 @@
-Claro! Aqui está o README estruturado no estilo típico para repositórios no GitHub, com títulos, subtítulos e formatação Markdown clara:
 
 ---
 
@@ -73,10 +72,10 @@ Or run the test executable directly:
 simple-calculator-gtest/
 ├── CMakeLists.txt         # Main CMake configuration file
 ├── src/                   # Source code
-│   ├── calculator.cpp     # Calculator implementation
+│   ├── operations.cpp     # Calculator implementation
 │   └── main.cpp           # Main entry point
 ├── inc/                   # Header files
-│   └── calculator.h       # Calculator header
+│   └── operations.h       # Calculator header
 ├── test/                  # Unit tests
 │   └── calculator_test.cpp # Google Test cases for calculator
 ├── googletest/            # (Optional) Google Test sources (auto-downloaded if missing)
@@ -134,5 +133,3 @@ Contributions are welcome! To contribute:
 - The open-source community for making this project possible.
 
 ---
-
-Com esta estrutura, o README está organizado, profissional e pronto para ser publicado em um repositório do GitHub. 🎉
