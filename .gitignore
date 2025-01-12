@@ -1,0 +1,6 @@
+googletest/
+.vscode/
+build/
+build.bat
+run_test.bat
+run.bat
