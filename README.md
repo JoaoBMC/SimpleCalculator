@@ -68,11 +68,11 @@ Or run the test executable directly:
 ### 🧮 Running the Calculator
 To run the calculator, execute the main application:
 ```bash
-Copiar código
 ./Calculator_main
 ```
 After running, the calculator will display a menu or interface (depending on your implementation). Enter your desired operations, such as addition or subtraction, as prompted.
 
+---
 ## 📂 Project Structure
 
 ```plaintext
