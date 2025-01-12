@@ -38,23 +38,28 @@ Make sure the following tools are installed on your system:
 ```bash
 git clone https://github.com/JoaoBMC/SimpleCalculator.git
 cd SimpleCalculator
+```
+
+### 2️⃣ Clone the Repository Gtest
+add Gtest to the repository for Cmake to find it
+```bash
 https://github.com/google/googletest.git
 ```
 
-### 2️⃣ Configure the Build
+### 3️⃣ Configure the Build
 Create a `build` directory and configure the project using CMake with Ninja:
 ```bash
 mkdir build && cd build
 cmake -G Ninja ..
 ```
 
-### 3️⃣ Build the Project
+### 4️⃣ Build the Project
 Run the build process:
 ```bash
 cmake --build .
 ```
 
-### 4️⃣ Run the Tests
+### 5️⃣ Run the Tests
 Execute the tests with:
 ```bash
 ctest
