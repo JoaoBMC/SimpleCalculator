@@ -1,8 +1,11 @@
 # Definir a versão mínima do CMake
 cmake_minimum_required(VERSION 3.10)
 
+# Pega o nome da pasta onde o CMakeLists.txt está localizado
+get_filename_component(PROJECT_DIR_NAME ${CMAKE_SOURCE_DIR} NAME)
+
 # Definir o nome do projeto
-project(Calculadora)
+project(${PROJECT_DIR_NAME})
 
 # Definir a versão do C++
 set(CMAKE_CXX_STANDARD 17)
