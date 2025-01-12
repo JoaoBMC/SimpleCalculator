@@ -70,7 +70,25 @@ To run the calculator, execute the main application:
 ```bash
 ./SimpleCalculator_main
 ```
-After running, the calculator will display a menu or interface (depending on your implementation). Enter your desired operations, such as addition or subtraction, as prompted.
+After running, the calculator will display a help interface. Enter the desired operations, such as addition or subtraction, as prompted in the example below.
+
+```bash
+=========================== HELP ===========================
+USAGE:
+        Calculadora_main.exe {OPERATION} {NUMBER 1} {NUMBER 2}
+
+OPERATIONS:
+        -sm     Summation Operation
+        -sb     Subtraction Operation
+        -ml     Multiplication Operation
+        -dv     Division Operation
+        -hp     Display Help
+
+EXAMPLES:
+        Calculadora_main.exe -sm 10 5   => Output: 10 + 5 = 15
+        Calculadora_main.exe -dv 10 0   => Output: Error: Division by zero
+===========================================================
+```
 
 ---
 ## 📂 Project Structure
